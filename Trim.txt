@@ -1,0 +1,15 @@
+﻿#Get domain from FQDN input
+    #.LINK https://stackoverflow.com/questions/5203730/cut-off-text-in-string-after-before-separator-in-powershell
+    #Get Domain Name
+            $position = $server.IndexOf(".")
+            $Domain = $server.Substring($position+1)
+
+
+$pos = $name.IndexOf(";")
+$leftPart = $name.Substring(0, $pos)
+$rightPart = $name.Substring($pos+1)
+
+HOSTNAME
+$pos = $servername.IndexOf(".")
+$leftPart = $servername.Substring(0, $pos)
+$rightPart = $servername.Substring($pos+1)
